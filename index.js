@@ -1,8 +1,8 @@
 // Declaring the dependencies and variables
 const fs = require("fs");
 var inquirer = require('inquirer');
-const generateReadme = require("./generateReadme.js");
-const README  = './generat/readme.md';
+const generateReadme = require("./generat/generateReadme.js");
+const README  = './DS-Stor/readme.md';
 
 //Prompt the user questions to populate the README.md
 var quistions = [
@@ -83,7 +83,7 @@ function Creator() {
                 fs.unlinkSync(README);
             }
                    
-    fs.writeFile('./generat/readme.md', newAnswer, function (error) {
+    fs.writeFile('./DS-Stor/readme.md', newAnswer, function (error) {
         if (error) {
             return console.log(error)
         }
